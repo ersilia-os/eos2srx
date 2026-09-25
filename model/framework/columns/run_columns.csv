@@ -1,1 +1,11 @@
 name,type,direction,description
+synscore,float,high,SynOmega synthesizability score computed from the count of non-purchasable starting materials in the best route
+bb_coverage,float,high,Fraction of the best route starting materials that are purchasable
+solved,float,high,One if a route within the depth limit was found with every starting material purchasable and zero otherwise
+u,float,high,Number of starting materials in the best route that are not purchasable
+min_steps,float,high,Reactions in the shortest solved route and empty when no solved route was found
+min_route_depth,float,high,Longest linear sequence of the shortest solved route and empty when no solved route was found
+num_routes,float,high,Number of distinct solved routes found for the target
+num_leaves,float,high,Starting materials in the best route found
+num_purchasable_leaves,float,high,Starting materials in the best route that are purchasable
+expansions,float,high,Node expansions the search used for this target
