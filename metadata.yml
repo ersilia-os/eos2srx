@@ -2,14 +2,14 @@ Identifier: eos2srx
 Slug: synomega
 Status: In progress
 Title: Route-Based Synthesizability Score
-Description: Scores how readily a compound can be made by running a
-  retrosynthetic search against the ZINC catalogue of purchasable building
-  blocks, so the result reflects commercial availability rather than structure
-  alone. A directed message-passing network proposes disconnections, restricted
-  to templates that split the target into smaller precursors, so
-  protecting-group steps cannot be expressed. Returns a continuous score plus
+Description: Scores how readily a compound can be made by running a 
+  retrosynthetic search against the ZINC catalogue of purchasable building 
+  blocks, so the result reflects commercial availability rather than structure 
+  alone. A directed message-passing network proposes disconnections, restricted 
+  to templates that split the target into smaller precursors, so 
+  protecting-group steps cannot be expressed. Returns a continuous score plus 
   the step and precursor counts of the best route. The bundled checkpoint is the
-  authors' release retrained after the paper.
+  authors release retrained after the paper.
 Deployment:
   - Local
 Source: Local
@@ -24,8 +24,8 @@ Output:
   - Value
 Output Dimension: 10
 Output Consistency: Fixed
-Interpretation: Higher scores indicate easier synthesis from purchasable building
-  blocks; the remaining columns describe the best route found.
+Interpretation: Higher scores indicate easier synthesis from purchasable 
+  building blocks; the remaining columns describe the best route found.
 Tag:
   - Synthetic accessibility
   - Chemical synthesis
@@ -39,3 +39,4 @@ Publication: https://doi.org/10.1021/acs.jcim.6c02529
 Source Code: https://github.com/zbc0315/synomega
 License: MIT
 Contributor: TiagoJanela
+Incorporation Date: '2026-09-25'
