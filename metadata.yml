@@ -1,6 +1,6 @@
 Identifier: eos2srx
 Slug: synomega
-Status: In progress
+Status: Ready
 Title: Route-Based Synthesizability Score
 Description: Scores how readily a compound can be made by running a 
   retrosynthetic search against the ZINC catalogue of purchasable building 
@@ -40,6 +40,18 @@ Source Code: https://github.com/zbc0315/synomega
 License: MIT
 Contributor: TiagoJanela
 Incorporation Date: '2026-09-25'
+Last Packaging Date: '2026-09-28'
+Release: v1.0.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2srx.zip
+DockerHub: https://hub.docker.com/r/ersiliaos/eos2srx
+Docker Architecture:
+  - AMD64
+  - ARM64
 Model Size: 224.0
 Environment Size: 1478.0
+Image Size: 1824.16
+Computational Performance 1: 149.95
+Computational Performance 2: 143.58
+Computational Performance 3: 217.04
+Computational Performance 4: 963.73
+Computational Performance 5: -1.0
