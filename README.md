@@ -1,7 +1,8 @@
 # Route-Based Synthesizability Score
 
-Scores how readily a compound can be made by running a retrosynthetic search against the ZINC catalogue of purchasable building blocks, so the result reflects commercial availability rather than structure alone. A directed message-passing network proposes disconnections, restricted to templates that split the target into smaller precursors, so protecting-group steps cannot be expressed. Returns a continuous score plus the step and precursor counts of the best route. The bundled checkpoint is the authors' release retrained after the paper.
+Scores how readily a compound can be made by running a retrosynthetic search against the ZINC catalogue of purchasable building blocks, so the result reflects commercial availability rather than structure alone. A directed message-passing network proposes disconnections, restricted to templates that split the target into smaller precursors, so protecting-group steps cannot be expressed. Returns a continuous score plus the step and precursor counts of the best route. The bundled checkpoint is the authors release retrained after the paper.
 
+This model was incorporated on 2026-09-25.
 
 
 ## Information
@@ -43,8 +44,11 @@ Below are the **Output Columns** of the model:
 ### Source and Deployment
 - **Source:** `Local`
 - **Source Type:** `External`
+- **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2srx.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2srx.zip)
 
 ### Resource Consumption
+- **Model Size (Mb):** `224`
+- **Environment Size (Mb):** `1478`
 
 
 ### References
