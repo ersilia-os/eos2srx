@@ -2,8 +2,7 @@
 
 Scores how readily a compound can be made by running a retrosynthetic search against the ZINC catalogue of purchasable building blocks, so the result reflects commercial availability rather than structure alone. A directed message-passing network proposes disconnections, restricted to templates that split the target into smaller precursors, so protecting-group steps cannot be expressed. Returns a continuous score plus the step and precursor counts of the best route. The bundled checkpoint is the authors release retrained after the paper.
 
-This model was incorporated on 2026-09-25.
-
+This model was incorporated on 2026-09-25.Last packaged on 2026-09-28.
 
 ## Information
 ### Identifiers
@@ -44,12 +43,19 @@ Below are the **Output Columns** of the model:
 ### Source and Deployment
 - **Source:** `Local`
 - **Source Type:** `External`
+- **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos2srx](https://hub.docker.com/r/ersiliaos/eos2srx)
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2srx.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2srx.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `224`
 - **Environment Size (Mb):** `1478`
+- **Image Size (Mb):** `1824.16`
 
+**Computational Performance (seconds):**
+- 10 inputs: `149.95`
+- 100 inputs: `217.04`
+- 10000 inputs: `-1`
 
 ### References
 - **Source Code**: [https://github.com/zbc0315/synomega](https://github.com/zbc0315/synomega)
