@@ -1,6 +1,8 @@
 python: "3.12"
 commands:
-    - ["pip", "rdkit-pypi", "2022.3.1b1"]
-    - ["conda", "pandas", "1.3.5", "default"]
-    - ["pip", "numpy", "1.26.4"]
+    - ["pip", "torch", "2.14.0+cpu", "--index-url", "https://download.pytorch.org/whl/cpu"]
+    - ["pip", "torch_geometric", "2.8.0.post1"]
+    - ["pip", "rdkit", "2026.3.6"]
+    - ["pip", "numpy", "2.5.3"]
+    - ["pip", "synomega", "0.10.0"]
     - ["pip", "ersilia-pack-utils", "0.1.5"]

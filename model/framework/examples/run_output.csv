@@ -1,0 +1,4 @@
+synscore,bb_coverage,solved,u,min_steps,min_route_depth,num_routes,num_leaves,num_purchasable_leaves,expansions
+1.0,1.0,1.0,0.0,2.0,2.0,8.0,3.0,3.0,9.0
+1.0,1.0,1.0,0.0,4.0,3.0,7.0,5.0,5.0,44.0
+1.0,1.0,1.0,0.0,2.0,2.0,6.0,3.0,3.0,10.0

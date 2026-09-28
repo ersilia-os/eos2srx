@@ -2,44 +2,38 @@ Identifier: eos2srx
 Slug: synomega
 Status: In progress
 Title: Route-Based Synthesizability Score
-Description: Scores how readily a compound can be made by running a 
-  retrosynthetic search against a catalogue of purchasable building blocks, so 
-  the result reflects commercial availability rather than structure alone. A 
-  directed message-passing network trained on a large atom-mapped reaction 
-  corpus proposes disconnections, restricted to templates that split the target 
-  into smaller precursors, and an AND-OR search assembles routes to purchasable 
-  material. Returns a continuous score with the step and precursor counts of the
-  best route. Protecting-group steps are excluded by design.
+Description: Scores how readily a compound can be made by running a
+  retrosynthetic search against the ZINC catalogue of purchasable building
+  blocks, so the result reflects commercial availability rather than structure
+  alone. A directed message-passing network proposes disconnections, restricted
+  to templates that split the target into smaller precursors, so
+  protecting-group steps cannot be expressed. Returns a continuous score plus
+  the step and precursor counts of the best route. The bundled checkpoint is the
+  authors' release retrained after the paper.
 Deployment:
   - Local
-  - Online
-Source: Local, Online
-Source Type: Internal, Replicated, External
-Task: Annotation, Representation, Sampling
-Subtask: Property calculation or prediction, Activity prediction, Featurization,
-  Projection, Similarity search, Generation
+Source: Local
+Source Type: External
+Task: Annotation
+Subtask: Property calculation or prediction
 Input:
   - Compound
 Input Dimension: 1
 Output:
-  - Value
   - Score
-  - Compound
-  - Text
-Output Dimension: 1
-Output Consistency: Fixed, Variable
-Interpretation: The output of this template model should be interpreted like 
-  this.
+  - Value
+Output Dimension: 10
+Output Consistency: Fixed
+Interpretation: Higher scores indicate easier synthesis from purchasable building
+  blocks; the remaining columns describe the best route found.
 Tag:
   - Synthetic accessibility
   - Chemical synthesis
 Biomedical Area:
-  - Biomedical Area 1
-  - Biomedical Area 2
+  - Any
 Target Organism:
-  - Target Organism 1
-  - Target Organism 2
-Publication Type: Peer reviewed, Preprint, Other
+  - Any
+Publication Type: Peer reviewed
 Publication Year: 2026
 Publication: https://doi.org/10.1021/acs.jcim.6c02529
 Source Code: https://github.com/zbc0315/synomega
