@@ -41,7 +41,7 @@ License: MIT
 Contributor: TiagoJanela
 Incorporation Date: '2026-09-25'
 Last Packaging Date: '2026-09-28'
-Release: v1.0.0
+Release: v1.0.1
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2srx.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos2srx
 Docker Architecture:
